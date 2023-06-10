@@ -225,11 +225,11 @@ getCurTime=(date)=>{
 
                           <Box sx={{fontSize:10}} >{message.likes!==0 ? message.likes : ""}</Box>
 
-                          <IconButton id={message._id+"likes"} edge="end" sx={{fontSize:10, marginRight:1}} disabled={message.likesSenders.length>0 && message.likesSenders.map((sender)=>{ return sender===JSON.parse(sessionStorage.getItem('userRecord'))._id})} aria-label="" onClick={()=>{  this.reaction(message.msgId, "up", message._id+"likes")
+                          <IconButton id={message._id+"likes"} edge="end" sx={{fontSize:10, marginRight:1}} disabled={message.likesSenders && message.likesSenders.length>0 && message.likesSenders.map((sender)=>{ return sender===JSON.parse(sessionStorage.getItem('userRecord'))._id})} aria-label="" onClick={()=>{  this.reaction(message.msgId, "up", message._id+"likes")
                         }}><ThumbUpIcon /></IconButton>
 
 
-                          <IconButton  id={message._id+"dislikes"} edge="end" aria-label="" onClick={()=>{this.reaction(message.msgId, "down", message._id+"dislikes")}}  disabled={message.dislikeSenders.length>0 && message.dislikeSenders.map((sender)=>{ return sender===JSON.parse(sessionStorage.getItem('userRecord'))._id})} ><ThumbDownIcon /></IconButton>
+                          <IconButton  id={message._id+"dislikes"} edge="end" aria-label="" onClick={()=>{this.reaction(message.msgId, "down", message._id+"dislikes")}}  disabled={message.dislikeSenders && message.dislikeSenders.length>0 && message.dislikeSenders.map((sender)=>{ return sender===JSON.parse(sessionStorage.getItem('userRecord'))._id})} ><ThumbDownIcon /></IconButton>
                           
                           
                           <Box sx={{fontSize:10, marginLeft:1}} >{message.dislikes!==0 ? message.dislikes : ""}</Box></ListItemButton></ListItem> <ListItem  id={"edit"+message.msgId} style={{display:"none"}} ><form method="post" onSubmit={this.editMsg} id={"editmsgForm_"+message.msgId} ><input type="hidden" name="editmsgId" value={message.msgId} /><TextField  defaultValue={message.msg} name="newTxt"  style= {{width: "570px", marginLeft:7}}/><Button variant="contained" style= {{height:"54px",marginLeft:"7px"}} type="submit">Update </Button></form></ListItem></span>)}
