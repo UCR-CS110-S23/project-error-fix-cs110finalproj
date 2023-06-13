@@ -1,4 +1,54 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/J4-E7dQl)
-# project-error-fix-cs110finalproj
-project-error-fix-cs110finalproj created by GitHub Classroom
-Messenger app is a React Nodejs chatting app that using socketIO to emit messages and Magnodb to keeptrack of chatroom history.
+
+
+# Messenger App (chatting app)
+
+
+## Description
+
+Messenger App is a React-Nodejs web app. The app emplements a simple chat app where useer can register/login to create/join chat rooms.
+
+The application is using SocketIO and Magnodb
+
+## Getting Started
+
+### Dependencies
+
+
+## React
+* socket.io-client
+* js-cookie
+* axios
+
+## Nodejs
+* axios
+* cookie-parse
+* cookie-parser
+* cors
+* dotenv
+* express
+* express-fileupload
+* express-session
+* mongoos
+* nodemon
+* socket.io
+* uuid
+
+
+
+
+### Installing
+
+* Get started by installing dependencies first.
+* Navigate to /back folder and run >> npm install
+* Navigate to /front and run >> npm install
+
+### Executing program
+
+* backend run  nodemon index.js
+* frontend run  npm start
+
+
+## Authors
+
+Mona Ibrahim
+
