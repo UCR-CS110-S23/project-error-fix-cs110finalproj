@@ -5,7 +5,7 @@
 
 ## Description
 
-Messenger App is a React-Nodejs web app. The app emplements a simple chat app where useer can register/login to create/join chat rooms.
+Messenger App is a React-Nodejs web app. The app implements a simple chat app where user can register/login to create/join chat rooms.
 
 The application is using SocketIO and Magnodb
 
@@ -48,7 +48,7 @@ The application is using SocketIO and Magnodb
 * frontend run  npm start
 
 
-## Authors
+## Author
 
 Mona Ibrahim
 
